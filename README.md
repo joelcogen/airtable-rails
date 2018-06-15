@@ -23,3 +23,11 @@ Instead of creating records in two steps:
 you can use `create_from_hash` to do both in a single call:
 
     table.create_from_hash(:name => "Sarah Jaine", :email => "sarah@jaine.com")
+
+## Enabling write methods in other environments
+
+By default, write methods (`create`, `update`, `destroy`) only call Airtable if the Rails environment is `production`.
+
+You can disable this behavior by passing the `force_write` option to the initializer:
+
+    table = AirtableRails::Table.new("Table name", force_write: true)

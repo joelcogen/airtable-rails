@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "airtable-rails"
-  s.version     = "1.0"
+  s.version     = "1.1"
   s.date        = "2018-06-15"
   s.summary     = "Airtable client from Rails"
   s.description = "Airtable client from Rails"
